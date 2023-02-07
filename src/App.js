@@ -8,6 +8,9 @@ import ProjectsPage from "./ProjectsPage";
 import DesignsPage from "./DesignsPage";
 import PhotographyPage from "./PhotographyPage";
 import NoPage from "./NoPage"
+import BlenderPage from "./BlenderPage";
+import ProducedBeatsPage from "./Beats";
+import AboutPage from "./AboutPage";
 
 
 function SocMedIcons() {
@@ -18,6 +21,7 @@ function SocMedIcons() {
       <SocialIcon url="https://github.com/dlord213" fgColor="white" className="href-nonhover" />
       <SocialIcon url="https://www.instagram.com/tsukeh2/" fgColor="white" className="href-nonhover" />
       <SocialIcon url="https://open.spotify.com/user/316okqwi4acmxle2hzky3xnk2tx4" fgColor="white" className="href-nonhover" />
+      <SocialIcon url="https://soundcloud.com/mirimomekiku" fgColor="white" className="href-nonhover" />
     </div>
   )
 }
@@ -33,9 +37,9 @@ function MainLayout() {
             <Link to="projects" id="projref">PROJECTS</Link>
             <Link to="designs" id="designsref">DESIGNS</Link>
             <Link to="photography" id="photoref">PHOTOGRAPHY</Link>
-            <Link to="s" id="threeDref">3D</Link>
-            <Link to="s" id="beatref">PRODUCED BEATS</Link>
-            <Link to="s" id="aboutref">ABOUT</Link>
+            <Link to="blender" id="threeDref">BLENDER</Link>
+            <Link to="beats" id="beatref">PRODUCED BEATS</Link>
+            <Link to="about" id="aboutref">ABOUT</Link>
           </div>
         </div>
       </header>
@@ -66,6 +70,9 @@ function App() {
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="designs" element={<DesignsPage />} />
           <Route path="photography" element={<PhotographyPage />} />
+          <Route path="blender" element={<BlenderPage/>} />
+          <Route path="beats" element={<ProducedBeatsPage/>} />
+          <Route path="about" element={<AboutPage/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
