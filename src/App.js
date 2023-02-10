@@ -11,6 +11,7 @@ import NoPage from "./NoPage"
 import BlenderPage from "./BlenderPage";
 import ProducedBeatsPage from "./Beats";
 import AboutPage from "./AboutPage";
+import PlaylistPage from "./PlaylistPage";
 
 
 function SocMedIcons() {
@@ -39,6 +40,7 @@ function MainLayout() {
             <Link to="photography" id="photoref">PHOTOGRAPHY</Link>
             <Link to="blender" id="threeDref">BLENDER</Link>
             <Link to="beats" id="beatref">PRODUCED BEATS</Link>
+            <Link to="playlist" id="playlistref">PLAYLISTS</Link>            
             <Link to="about" id="aboutref">ABOUT</Link>
           </div>
         </div>
@@ -72,6 +74,7 @@ function App() {
           <Route path="photography" element={<PhotographyPage />} />
           <Route path="blender" element={<BlenderPage/>} />
           <Route path="beats" element={<ProducedBeatsPage/>} />
+          <Route path="playlist" element={<PlaylistPage/>} />
           <Route path="about" element={<AboutPage/>} />
           <Route path="*" element={<NoPage />} />
         </Route>

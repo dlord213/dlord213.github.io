@@ -1,9 +1,14 @@
 import ReactDOM from "react-dom/client";
+import { Helmet } from "react-helmet";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const ProjectsPage = () => {
     return (
         <div className="projects-container">
+            <Helmet>
+                <title>MIRI | Projects</title>
+                <meta name="description" content="Mirimomekiku's Projects"></meta>
+            </Helmet>
             <h1>Projects</h1>
             <div className="grid">
                 <div className="child">
@@ -56,5 +61,5 @@ const ProjectsPage = () => {
         </div>
     )
 }
- 
+
 export default ProjectsPage;

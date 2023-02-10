@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import { Helmet } from "react-helmet";
 
 const RenderImgPanels = (props) => {
 
@@ -55,6 +56,10 @@ const ImgCarousel = () => {
 const PhotographyPage = () => {
     return (
         <div className="photography-container">
+            <Helmet>
+                <title>MIRI | Photos</title>
+                <meta name="description" content="Mirimomekiku's Photos."></meta>
+            </Helmet>
             <div className="carousel-container" id="photography-carousel">
                 <h1>Photos</h1>
                 <ImgCarousel />

@@ -446,6 +446,32 @@ a:hover {
 }
 /* ABOUT PAGE CONTAINER */
 
+/* PLAYLIST PAGE CONTAINER */
+.playlist-page-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.playlist-page-container > .playlists {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+.playlist-page-container > .playlists > .child > img {
+    width: 400px;
+    border-radius: 1em;
+}
+.playlist-page-container > .playlists > .child {
+    background-color: #12100e;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 1em;
+}
+/* PLAYLIST PAGE CONTAINER */
+
 /*------------------------------------------
   Responsive Grid Media Queries - 1280, 1024, 768, 480
    1280-1024   - desktop (default grid)
@@ -840,7 +866,19 @@ a:hover {
 }
 
 @media all and (max-width: 480px) {
-
+    .accordion {
+        margin: 1em;
+        display: flex;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        background-color: #30321C;
+        padding: 1em;
+        border-radius: 1em;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: small;
+    }
 
     .blender-container {
         display: flex;

@@ -7,6 +7,7 @@ import {
     AccordionItemButton,
     AccordionItemPanel,
 } from 'react-accessible-accordion';
+import { Helmet } from "react-helmet";
 
 const RenderAudioPanel = (props) => {
 
@@ -33,6 +34,10 @@ const RenderAudioPanel = (props) => {
 const ProducedBeatsPage = () => {
     return (
         <div className="beats-container">
+            <Helmet>
+                <title>MIRI | Produced Beats</title>
+                <meta name="description" content="Mirimomekiku's Produced Beats"></meta>
+            </Helmet>
             <h1>Beats</h1>
             <Accordion allowMultipleExpanded allowZeroExpanded>
                 <RenderAudioPanel src="aaliyah 2.mp3" title="aaliyah." bpm="114" bitrate="192" />

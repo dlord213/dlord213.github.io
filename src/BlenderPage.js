@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import { Helmet } from "react-helmet";
 
 const RenderVidPanels = (props) => {
 
@@ -21,15 +22,19 @@ const RenderVidPanels = (props) => {
 const BlenderPage = () => {
     return (
         <div className="blender-container">
+            <Helmet>
+                <title>MIRI | Models</title>
+                <meta name="description" content="Mirimomekiku's Models"></meta>
+            </Helmet>
             <h1>Models (Blender)</h1>
             <div className="grid">
                 <RenderVidPanels vid="guitar (ver 2).mp4" type="video/mp4" title="Guitar" />
-                <RenderVidPanels vid="KATANA.mp4" type="video/mp4" title="Katana"/>
-                <RenderVidPanels vid="MIRIMOMEKIKU.mp4" type="video/mp4" title="Name Render"/>
-                <RenderVidPanels vid="FIRST PS1 GRAPHICS (2).mp4" type="video/mp4" title="PS1 Graphics"/>
-                <RenderVidPanels vid="CONSOLE.mp4" type="video/mp4" title="Handheld Console"/>
-                <RenderVidPanels vid="liminal space ps1 with sound.mp4" type="video/mp4" title="Liminal Space (PS1 Graphics)"/>
-                <RenderVidPanels vid="FEDORA HAT.mp4" type="video/mp4" title="Glowing Fedora Hat"/>
+                <RenderVidPanels vid="KATANA.mp4" type="video/mp4" title="Katana" />
+                <RenderVidPanels vid="MIRIMOMEKIKU.mp4" type="video/mp4" title="Name Render" />
+                <RenderVidPanels vid="FIRST PS1 GRAPHICS (2).mp4" type="video/mp4" title="PS1 Graphics" />
+                <RenderVidPanels vid="CONSOLE.mp4" type="video/mp4" title="Handheld Console" />
+                <RenderVidPanels vid="liminal space ps1 with sound.mp4" type="video/mp4" title="Liminal Space (PS1 Graphics)" />
+                <RenderVidPanels vid="FEDORA HAT.mp4" type="video/mp4" title="Glowing Fedora Hat" />
 
             </div>
         </div>
