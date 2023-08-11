@@ -136,7 +136,7 @@ export const SecondSectionPage = () => {
   return (
     <>
       <div
-        className="lg:container flex flex-col h-screen w-full lg:p-16 md:p-8 animate-hidden"
+        className="lg:container hidden lg:flex flex-col h-screen w-full lg:p-16 md:p-8 animate-hidden"
         id="projects-section"
       >
         <h1 className="font-bold md:text-6xl">projects</h1>
@@ -144,14 +144,14 @@ export const SecondSectionPage = () => {
         <CustomSlider images={projectImages} />
       </div>
       <div
-        className="lg:container flex flex-col h-screen w-full lg:p-16 md:p-8 animate-hidden"
+        className="lg:container hidden lg:flex flex-col h-screen w-full lg:p-16 md:p-8 animate-hidden"
         id="artworks-section"
       >
         <h1 className="font-bold md:text-6xl">artworks</h1>
         <CustomSlider images={artworkImages} type="art" />
       </div>
       <div
-        className="lg:container flex flex-col h-screen w-full lg:p-16 md:p-8 animate-hidden"
+        className="lg:container hidden lg:flex flex-col h-screen w-full lg:p-16 md:p-8 animate-hidden"
         id="typography-section"
       >
         <h1 className="font-bold md:text-6xl">typography</h1>

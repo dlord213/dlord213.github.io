@@ -3,7 +3,7 @@ function reply_click(id) {
 }
 
 export const LandingPage = () => {
-  const btnStyle = "mr-4 hover:text-white duration-500 text-xl hover:bg-red-500 p-1 hover:px-8";
+  const btnStyle = "xl:mr-4 mr-2 hover:text-white duration-500 text-xl hover:bg-red-500 p-1 hover:px-8";
 
   return (
     <div className="lg:container flex flex-col h-screen lg:p-16 md:p-8 animate-hidden justify-center" id="landing-section">
