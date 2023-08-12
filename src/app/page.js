@@ -3,13 +3,14 @@
 import { MediaPage } from "./components/MediaPage";
 import { LandingPage } from "./components/LandingPage";
 import { LanguagePage } from "./components/LanguagePage";
-import { SecondSectionPage } from "./components/SecondSectionPage";
+import { ArtsPage } from "./components/ArtsPage";
 import ContactPage from "./components/ContactPage";
 import { ReactLenis } from "@studio-freight/react-lenis";
 import { DynamicBG } from "./components/DynamicBG";
 import { LeftLayout } from "./components/LeftLayout";
 import { useEffect, useState } from "react";
 import { SplashPage } from "./components/SplashPage";
+import ProjectsPage from "./components/ProjectsPage";
 
 const Home = () => {
   const [buttonTheme, setBtnTheme] = useState(
@@ -38,6 +39,7 @@ const Home = () => {
     setTimeout(() => {
       setPageState(1);
     }, 5500);
+    
 
     setTimeout(() => {
       if (windowWidth > 1024) {
@@ -96,7 +98,8 @@ const Home = () => {
           </button>
           <main className={theme + " flex min-h-screen flex-col items-center"}>
             <LandingPage />
-            <SecondSectionPage />
+            <ProjectsPage/>
+            <ArtsPage />
             <LanguagePage />
             <MediaPage />
             <ContactPage />
