@@ -71,7 +71,7 @@ let projectImages = [
 const ProjectsPage = () => {
   return (
     <div
-      className="lg:container hidden lg:flex justify-center flex-col w-full lg:p-16 md:p-8 animate-hidden"
+      className="lg:container hidden lg:flex justify-center flex-col w-full lg:p-16 md:p-8 animate-hidden z-10"
       id="projects-section"
     >
       <h1 className="font-bold md:text-6xl">projects</h1>

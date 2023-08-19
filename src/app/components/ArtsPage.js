@@ -68,7 +68,7 @@ export const ArtsPage = () => {
   return (
     <>
       <div
-        className="lg:container hidden lg:flex justify-center min-h-screen items-center lg:flex-row flex-col my-8 lg:p-16 md:p-8 animate-hidden gap-4"
+        className="lg:container hidden lg:flex justify-center min-h-screen items-center lg:flex-row flex-col my-8 lg:p-16 md:p-8 animate-hidden gap-4 z-10"
         id="artworks-section"
       >
         <div className="flex flex-col basis-[50%]">

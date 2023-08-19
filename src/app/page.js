@@ -11,6 +11,7 @@ import { LeftLayout } from "./components/LeftLayout";
 import { useEffect, useState } from "react";
 import { SplashPage } from "./components/SplashPage";
 import ProjectsPage from "./components/ProjectsPage";
+import { WebProjectsPage } from "./components/WebProjectsPage";
 
 const Home = () => {
   const [buttonTheme, setBtnTheme] = useState(
@@ -21,6 +22,8 @@ const Home = () => {
   const [pageState, setPageState] = useState(0);
 
   useEffect(() => {
+    var htmlElement = document.querySelector("html");
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -39,7 +42,6 @@ const Home = () => {
     setTimeout(() => {
       setPageState(1);
     }, 5500);
-    
 
     setTimeout(() => {
       if (windowWidth > 1024) {
@@ -48,6 +50,10 @@ const Home = () => {
           .classList.remove("opacity-0");
         document.getElementById("dynamic-bg-wrap").classList.add("opacity-20");
       }
+    }, 7000);
+
+    setTimeout(() => {
+      htmlElement.classList.remove("table");
     }, 7000);
   }, [pageState]);
 
@@ -98,7 +104,8 @@ const Home = () => {
           </button>
           <main className={theme + " flex min-h-screen flex-col items-center"}>
             <LandingPage />
-            <ProjectsPage/>
+            <ProjectsPage />
+            <WebProjectsPage />
             <ArtsPage />
             <LanguagePage />
             <MediaPage />

@@ -10,7 +10,7 @@ export const MediaPage = () => {
 
   return (
     <>
-      <div className="lg:container hidden lg:flex min-h-screen flex-row lg:p-16 md:p-8 animate-hidden justify-center duration-500 transition-all delay-0" id="songs-section">
+      <div className="lg:container hidden lg:flex min-h-screen flex-row lg:p-16 md:p-8 animate-hidden justify-center duration-500 transition-all delay-0 z-10" id="songs-section">
         <div className="flex flex-col basis-[30%]">
           <h1 className="font-bold xl:text-4xl text-xl">favorite albums / singles</h1>
           <div className="flex flex-col justify-between h-full">

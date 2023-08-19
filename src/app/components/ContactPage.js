@@ -3,7 +3,7 @@ import Link from "next/link";
 const ContactPage = () => {
   return (
     <div
-      className="lg:container flex flex-col min-h-screen justify-center lg:p-16 md:p-8 animate-hidden"
+      className="lg:container flex flex-col min-h-screen justify-center lg:p-16 md:p-8 animate-hidden z-10"
       id="contact-section"
     >
       <h1 className="font-bold md:text-6xl text-4xl my-4">contact me</h1>

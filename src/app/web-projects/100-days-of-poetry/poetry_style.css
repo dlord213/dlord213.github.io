@@ -1,0 +1,19 @@
+#splash-page {
+  transition: all 500ms ease-in-out;
+  overflow: hidden;
+  filter: url(#threshold) blur(0.7px);
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+#splash-page::-webkit-scrollbar {
+  display: none;
+}
+
+#text-1,
+#text-2 {
+  transition: transform 1s ease-in-out;
+}
+
+.images-container:hover .child-image:not(:hover) {
+  filter: blur(3px) grayscale(0.7);
+}

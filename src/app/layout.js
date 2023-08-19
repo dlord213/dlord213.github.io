@@ -12,11 +12,10 @@ export const metadata = {
   description: "Jhon Lloyd Viernes (Portfolio Website)"
 }
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={mainFont.className + " select-none scroll-smooth"}>
+      <body className={mainFont.className + " select-none"}>
         {children}
       </body>
     </html>
