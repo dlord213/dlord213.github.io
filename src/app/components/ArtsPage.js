@@ -81,10 +81,14 @@ export const ArtsPage = () => {
             showThumbs={false}
             showIndicators={false}
             swipeable={true}
+            emulateTouch={true}
           >
             {artworkImages.map((src, idx) => (
               <div className=" my-8" key={idx}>
-                <img src={src} className="bg-transparent object-fit aspect-square"></img>
+                <img
+                  src={src}
+                  className="bg-transparent object-fit aspect-square"
+                ></img>
               </div>
             ))}
           </Carousel>
@@ -98,11 +102,15 @@ export const ArtsPage = () => {
             showStatus={true}
             showThumbs={false}
             showIndicators={false}
+            emulateTouch={true}
             swipeable={true}
           >
             {typographyImages.map((src, idx) => (
               <div className=" my-8" key={idx}>
-                <img src={src} className="bg-transparent object-fit aspect-square"></img>
+                <img
+                  src={src}
+                  className="bg-transparent object-fit aspect-square"
+                ></img>
               </div>
             ))}
           </Carousel>

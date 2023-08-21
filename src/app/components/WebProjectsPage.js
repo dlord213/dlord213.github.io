@@ -3,6 +3,11 @@ import { Carousel } from "react-responsive-carousel";
 
 const projects = [
   {
+    title: "Channel Orange",
+    desc: "Expressing my love for the album named 'channel orange' by Frank Ocean.",
+    link: "/web-projects/channel-orange",
+  },
+  {
     title: "100 Days of Poetry",
     desc: "A gallery album of my creations and poems that I liked.",
     link: "/web-projects/100-days-of-poetry",
@@ -41,6 +46,16 @@ const projects = [
     title: "Weather Checker",
     desc: "A simple webpage that checks the weather based on city you enter using an API.",
     link: "/web-projects/weather-checker",
+  },
+  {
+    title: "Dicfinition",
+    desc: "A simple webpage that provides an definition of a word you entered using an API.",
+    link: "/web-projects/dicfinition",
+  },
+  {
+    title: "Nymsfinder",
+    desc: "A simple webpage that provides a list of synonyms and antonyms of a word you entered using an API.",
+    link: "/web-projects/nymsfinder",
   },
 ];
 
@@ -102,6 +117,7 @@ export const WebProjectsPage = () => {
         showThumbs={false}
         showIndicators={false}
         swipeable={true}
+        emulateTouch={true}
       >
         {projects.map((src, idx) => (
           <div className="flex flex-col justify-center items-center " key={idx}>

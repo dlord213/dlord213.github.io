@@ -66,8 +66,19 @@ export default function Page() {
           </div>
           <div className="flex flex-row my-4 h-[40px] rounded-md justify-between items-center bg-slate-950 text-white p-4">
             <p>{bgGradient}</p>
-            <button className="ml-8 text-red-500">Copy</button>
+            <button
+              className="ml-8 text-red-500"
+              onClick={() => {
+                document.querySelector(".hidden").classList.remove("hidden");
+                navigator.clipboard.writeText(bgGradient);
+              }}
+            >
+              Copy
+            </button>
           </div>
+          <p className="hidden text-white bg-slate-950 p-2 rounded-md" id="copied-text">
+            Copied.
+          </p>
         </div>
       </div>
     </>

@@ -85,6 +85,7 @@ const ProjectsPage = () => {
         showThumbs={false}
         showIndicators={false}
         swipeable={true}
+        emulateTouch={true}
       >
         {projectImages.map((src, idx) => (
           <div
