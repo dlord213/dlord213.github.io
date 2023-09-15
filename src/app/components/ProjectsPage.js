@@ -75,7 +75,7 @@ const ProjectsPage = () => {
       id="projects-section"
     >
       <h1 className="font-bold md:text-6xl">projects</h1>
-      <p className="my-2">mostly mini-projects</p>
+      <p className="my-2">mostly mini-projects </p>
       <Carousel
         className=""
         dynamicHeight={true}

@@ -12,7 +12,7 @@ export const LandingPage = () => {
           <h1 className="md:text-6xl text-xl font-bold transition-all duration-500 delay-0 ease-in-out hover:translate-x-5 hover:text-red-500">
             mirimomekiku
           </h1>
-          <p className="md:text-lg text-sm">software engineer</p>
+          <p className="md:text-lg text-sm">student</p>
         </div>
         <img
           src="/assets/profile.jpg"

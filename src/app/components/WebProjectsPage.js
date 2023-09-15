@@ -13,6 +13,11 @@ const projects = [
     link: "/web-projects/100-days-of-poetry",
   },
   {
+    title: "♡ ditto ♡",
+    desc: "A cute social media page I made.",
+    link: "/web-projects/ditto",
+  },
+  {
     title: "Gradient Generator",
     desc: "A simple gradient generator.",
     link: "/web-projects/gradient-generator",
@@ -107,12 +112,12 @@ const ProjectsTable = () => {
 export const WebProjectsPage = () => {
   return (
     <div className="lg:container hidden lg:flex items-center justify-center flex-col w-full lg:p-16 md:p-8 animate-hidden h-screen z-10">
-      <h1 className="font-bold md:text-6xl">web projects</h1>
+      <Link href="/web-projects/"><h1 className="font-bold md:text-6xl hover:text-red-500 transition-all duration-500 delay-0">web projects </h1></Link>
       <Carousel
         className="my-4"
         dynamicHeight={true}
         infiniteLoop={false}
-        autoPlay={false}
+        autoPlay={true}
         showStatus={false}
         showThumbs={false}
         showIndicators={false}
