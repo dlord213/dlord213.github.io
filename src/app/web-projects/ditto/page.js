@@ -1,7 +1,7 @@
 "use client";
 
 import { Work_Sans } from "next/font/google";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./ditto-styles.css";
 
 const workSans = Work_Sans({
@@ -418,7 +418,7 @@ const HeartSVG = () => {
 
 const HeartBG = (props) => {
   return (
-    <ul className="circles" style={{opacity: `${props.opacity}`}}>
+    <ul className="circles" style={{ opacity: `${props.opacity}` }}>
       <li>
         <HeartSVG />
       </li>
@@ -595,11 +595,13 @@ const LoginPage = (props) => {
 
   return (
     <div className="min-h-screen w-full flex flex-col justify-center items-center bg-lime-400 p-8">
-      <HeartBG/>
+      <HeartBG />
       <div className="flex flex-col">
         <div className="p-8 bg-white rounded-bl-2xl rounded-tr-2xl drop-shadow-[6px_6px_black]">
           <h1
-            className={workSans.className + " text-6xl font-black text-black px-16"}
+            className={
+              workSans.className + " text-6xl font-black text-black px-16"
+            }
           >
             mina-mina
           </h1>

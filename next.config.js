@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: "export",
   // basePath: '/dlord213.github.io',
-}
+  transpilePackages: ["three"],
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

@@ -5,8 +5,8 @@ import { useState, useEffect } from "react";
 export default function Page() {
   const [word, setWord] = useState("code");
   const [wordJSON, setJSON] = useState(null);
-  const [textState, setTextState] = useState("Please enter the card number.");
-  const [dataUpdated, setDataUpdated] = useState(false)
+  const [textState, setTextState] = useState("Please enter a word.");
+  const [dataUpdated, setDataUpdated] = useState(false);
 
   const api_url = `https://api.api-ninjas.com/v1/dictionary?word=${word}`;
 
@@ -20,7 +20,7 @@ export default function Page() {
         "X-Api-Key": "R7VCAmJDAaZnUOMFyAa4Ag==fBMnIVB1XkNksG2s",
       },
     });
-    const json = await response.json()
+    const json = await response.json();
 
     console.log(json);
     setJSON(json);
@@ -28,16 +28,14 @@ export default function Page() {
   };
 
   useEffect(() => {
-
     if (dataUpdated == true) {
       if (wordJSON.valid == true) {
-        setTextState(wordJSON.definition)
+        setTextState(wordJSON.definition);
       } else {
-        setTextState("Word is invalid.")
+        setTextState("Word is invalid.");
       }
     }
-
-  }, [dataUpdated, wordJSON])
+  }, [dataUpdated, wordJSON]);
 
   return (
     <>

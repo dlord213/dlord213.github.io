@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { Oswald } from "next/font/google";
 import "./channel-orange-styles.css";
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { ReactLenis } from "@studio-freight/react-lenis";
 import { Spotify } from "react-spotify-embed";
 
@@ -107,7 +107,9 @@ const TextSectionOne = (props) => {
       ref={containerRef}
     >
       <div className="p-16" ref={triggerRef}>
-        <p ref={titleRef} className="text-reveal">{text_1}</p>
+        <p ref={titleRef} className="text-reveal">
+          {text_1}
+        </p>
       </div>
     </div>
   );
@@ -248,7 +250,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-2 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">Thinkin&apos; Bout You</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            Thinkin&apos; Bout You
+          </h1>
           <p className="text-xl">
             “Thinkin Bout You” is the first single on channel ORANGE. Frank
             originally wrote it for Bridget Kelly but after his reference track
@@ -263,7 +267,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-3 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">Fertilizer</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            Fertilizer
+          </h1>
           <p className="text-xl">
             A short interlude that opens up the darker themes on the album. Over
             what sounds like a 1950s radio program and matching static, Ocean
@@ -275,7 +281,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-4 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">Sierra Leone</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            Sierra Leone
+          </h1>
           <p className="text-xl">
             In “Sierra Leone,” Frank talks to a (fictional) younger version of
             himself who fooled around and got a girl pregnant. <br></br>
@@ -292,7 +300,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-5 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">Sweet Life</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            Sweet Life
+          </h1>
           <p className="text-xl">
             The fifth track off of Frank Ocean’s full length debut, channel
             ORANGE, “Sweet Life” provides a reflective look into the effects of
@@ -307,7 +317,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-6 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">Not Just Money</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            Not Just Money
+          </h1>
           <p className="text-xl">
             This is actually just one of Frank’s friend’s mom, Rosie Watson,
             scolding him. The homie recorded it (cuz it’s just too damn funny)
@@ -322,7 +334,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-7 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">Super Rich Kids</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            Super Rich Kids
+          </h1>
           <p className="text-xl">
             The song elaborates on how a life full of material worth can never
             fulfill someone like love and happiness can. In the final verse, the
@@ -336,7 +350,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-8 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">Pilot Jones</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            Pilot Jones
+          </h1>
           <p className="text-xl">
             In track 8 of Frank Ocean’s 2012 Channel Orange album, he discusses
             the topic of first love and compares it with a drug by using the
@@ -354,7 +370,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-9 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">Crack Rock</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            Crack Rock
+          </h1>
           <p className="text-xl">
             On the 9th track off channel ORANGE, Ocean speaks about a man
             overcome by an addiction to crack cocaine, and comments on the
@@ -369,7 +387,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-10 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">Pyramids</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            Pyramids
+          </h1>
           <p className="text-xl">
             This is Frank Ocean’s near 10 minute long tale of the ancient
             history of the Black woman, and her gradual decline from a Queen in
@@ -390,7 +410,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-11 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">Lost</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            Lost
+          </h1>
           <p className="text-xl">
             The protagonist in the song is a drug supplier who uses his
             girlfriend as a drug mule. His lover gets lost in the intensity of
@@ -404,7 +426,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-12 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">White</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            White
+          </h1>
           <p className="text-xl">
             This cut from Channel Orange is a relaxed instrumental version of
             Frank’s song “White” from The Odd Future Tape Vol. 2 <br></br>
@@ -416,7 +440,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-13 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">Monks</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            Monks
+          </h1>
           <p className="text-xl">
             Frank discusses the relationship he had with a female groupie he had
             met on a tour. He continuously compares the audience at his tours to
@@ -426,7 +452,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-14 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">Bad Religion</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            Bad Religion
+          </h1>
           <p className="text-xl">
             Frank Ocean initiates a makeshift therapy session in the backseat of
             a cab on this sorrowful track.
@@ -435,7 +463,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-15 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">Pink Matter</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            Pink Matter
+          </h1>
           <p className="text-xl">
             A play on the term “gray matter,” the substance that makes up the
             brain, “Pink Matter” is a meditation on the female anatomy, desire,
@@ -450,7 +480,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-16 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">Forrest Gump</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            Forrest Gump
+          </h1>
           <p className="text-xl">
             “Forrest Gump” is the sixteenth and penultimate track on Frank
             Ocean’s debut album, Channel ORANGE.
@@ -466,7 +498,9 @@ const SongsSection = (props) => {
       </div>
       <div className={"slide slide-17 items-center " + slideStyle}>
         <div className="flex flex-col basis-[80%] justify-center w-1/2">
-          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">End</h1>
+          <h1 className="font-bold text-[4rem] 2xl:text-[7rem] mb-4 text-reveal">
+            End
+          </h1>
           <p className="text-xl">
             “End” serves as the closer to channel ORANGE on streaming services.
             The physical releases of the album would have Golden Girl featuring
@@ -540,7 +574,7 @@ export default function Page() {
         <LandingSection />
         <TextSectionTwo />
         <TextSectionOne />
-        <SongsSection/>
+        <SongsSection />
         <EndingPage />
       </main>
     </ReactLenis>

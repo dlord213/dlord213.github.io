@@ -1,22 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "~react-image-gallery/styles/css/image-gallery.css";
-
-@layer utilities {
-  @variants responsive {
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .no-scrollbar {
-      -ms-overflow-style: none; /* IE and Edge */
-      scrollbar-width: none; /* Firefox */
-    }
-  }
-}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -31,47 +15,98 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+@layer base {
+  body {
+    @apply dark:bg-[#130608] dark:text-[#F4DCDF] bg-[#F9ECEE] text-[#230B0E];
+  }
+}
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
 
-html {
-  overflow-y: scroll;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
-}
-body {
-  overflow-y: visible;
-  position: relative;
-  overflow-x: hidden;
-}
-html,
-body {
-  margin: 0;
-}
-/* width */
 ::-webkit-scrollbar {
   width: 8px;
 }
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #3586ff;
-  border-radius: 4em;
+  border-radius: 2em;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+/* ZOOM IMAGE COMPONENT CSS */
+.custom-zoom-modal [data-rmiz-modal-overlay],
+.custom-zoom-modal [data-rmiz-modal-img] {
+  transition-duration: 0.7s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.custom-zoom-modal [data-rmiz-modal-overlay="hidden"] {
+  background-color: rgb(190, 60, 77, 0);
+}
+.custom-zoom-modal [data-rmiz-modal-overlay="visible"] {
+  background-color: rgb(190, 60, 77, 0.4);
+}
+.custom-zoom-modal [data-rmiz-btn-unzoom] {
+  display: none;
+  background-color: #bd93f9;
+  color: #000;
+}
+.custom-zoom-modal [data-rmiz-btn-unzoom]:focus-visible {
+  display: none;
+  outline-offset: 0;
+  outline: 0.2rem solid rgb(190, 60, 77);
+}
+/* ZOOM IMAGE COMPONENT CSS */
+
+.panel {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
 }
 
-.animate-hidden {
-  opacity: 0;
-  transition: all 1.5s ease-in-out;
+@keyframes scroll-down-animation {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0px);
+    color: rgb(190, 60, 77);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
 }
-.animate-show {
-  opacity: 1;
+.scroll-down-animate {
+  animation-name: scroll-down-animation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes music-animation {
+  0% {
+    transform: translateX(15px);
+  }
+  50% {
+    transform: translateX(0px);
+    color: rgb(190, 60, 77);
+  }
+  100% {
+    transform: translateX(15px);
+  }
+}
+.music-title-animate {
+  animation-name: music-animation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }

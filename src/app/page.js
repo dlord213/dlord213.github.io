@@ -1,120 +1,45 @@
 "use client";
-
-import { MediaPage } from "./components/MediaPage";
-import { LandingPage } from "./components/LandingPage";
-import { LanguagePage } from "./components/LanguagePage";
-import { ArtsPage } from "./components/ArtsPage";
-import ContactPage from "./components/ContactPage";
 import { ReactLenis } from "@studio-freight/react-lenis";
-import { DynamicBG } from "./components/DynamicBG";
-import { LeftLayout } from "./components/LeftLayout";
-import { useEffect, useState } from "react";
-import { SplashPage } from "./components/SplashPage";
-import ProjectsPage from "./components/ProjectsPage";
-import { WebProjectsPage } from "./components/WebProjectsPage";
+import { ThemeProvider } from "next-themes";
+import LandingPage from "./components/HomeComponents/LandingPage/LandingPage";
+import BeforeLandingPage from "./components/HomeComponents/BeforeLandingPage";
+import ArtworksPage from "./components/HomeComponents/ArtworksPage/ArtworksPage";
+import { ProjectsPage } from "./components/HomeComponents/ProjectsPage/ProjectsPage";
+import { DesignLayoutPage } from "./components/HomeComponents/DesignLayoutPage/DesignLayoutPage";
+import { DynamicBG } from "./components/HomeComponents/DynamicBG";
+import "./dynamic_bg.css";
+import { MusicPage } from "./components/HomeComponents/MusicPage/MusicPage";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
-const Home = () => {
-  const [buttonTheme, setBtnTheme] = useState(
-    "text-black lg:border-b-2 border-black hover:bg-black hover:text-white"
-  );
-  const [theme, setTheme] = useState(" bg-white text-black accent-sky-600");
-  const [themeState, setThemeState] = useState(0); // 0 = light | 1 = dark
-  const [pageState, setPageState] = useState(0);
+export default function Home() {
+  const lenisRef = useRef();
 
   useEffect(() => {
-    var htmlElement = document.querySelector("html");
+    function update(time) {
+      lenisRef.current?.raf(time * 1000);
+    }
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate-show");
-        } else {
-          entry.target.classList.remove("animate-show");
-        }
-      });
-    });
+    gsap.ticker.add(update);
 
-    const elements = document.querySelectorAll(".animate-hidden");
-    elements.forEach((el) => observer.observe(el));
+    return () => {
+      gsap.ticker.remove(update);
+    };
+  });
 
-    const windowWidth = window.innerWidth;
-
-    setTimeout(() => {
-      setPageState(1);
-    }, 5500);
-
-    setTimeout(() => {
-      if (windowWidth > 1024) {
-        document
-          .getElementById("dynamic-bg-wrap")
-          .classList.remove("opacity-0");
-        document.getElementById("dynamic-bg-wrap").classList.add("opacity-20");
-      }
-    }, 7000);
-
-    setTimeout(() => {
-      htmlElement.classList.remove("table");
-    }, 7000);
-  }, [pageState]);
-
-  if (pageState == 0) {
-    return <SplashPage />;
-  } else {
-    return (
-      <>
-        <ReactLenis root>
+  return (
+    <ThemeProvider attribute="class">
+      <ReactLenis ref={lenisRef} autoRaf={false} root>
+        <main className="2xl:p-24 lg:p-16">
           <DynamicBG />
-          <LeftLayout theme={buttonTheme} />
-          <button
-            className={
-              "fixed bottom-[5rem] left-[0rem] hidden min-[1440px]:block transition-all ease-in-out delay-0 duration-500 p-2 -rotate-90 " +
-              buttonTheme
-            }
-            type="toggle"
-            onClick={() => {
-              if (themeState == 1) {
-                setThemeState(0);
-                setTheme(" bg-white text-black");
-                setBtnTheme(
-                  " text-black border-b-2 border-black p-4 hover:bg-black hover:text-white"
-                );
-                document
-                  .getElementById("dynamic-bg-wrap")
-                  .classList.remove("opacity-10");
-                document
-                  .getElementById("dynamic-bg-wrap")
-                  .classList.add("opacity-20");
-              }
-              if (themeState == 0) {
-                setThemeState(1);
-                setTheme(" bg-slate-950 text-white");
-                setBtnTheme(
-                  " text-white border-b-2 border-white p-4 hover:bg-white hover:text-black"
-                );
-                document
-                  .getElementById("dynamic-bg-wrap")
-                  .classList.remove("opacity-20");
-                document
-                  .getElementById("dynamic-bg-wrap")
-                  .classList.add("opacity-10");
-              }
-            }}
-          >
-            switch theme
-          </button>
-          <main className={theme + " flex min-h-screen flex-col items-center"}>
-            <LandingPage />
-            <ProjectsPage />
-            <WebProjectsPage />
-            <ArtsPage />
-            <LanguagePage />
-            <MediaPage />
-            <ContactPage />
-          </main>
-        </ReactLenis>
-      </>
-    );
-  }
-};
-
-export default Home;
+          <BeforeLandingPage />
+          <LandingPage />
+          <ProjectsPage />
+          <ArtworksPage />
+          <DesignLayoutPage />
+          <MusicPage />
+        </main>
+      </ReactLenis>
+    </ThemeProvider>
+  );
+}
