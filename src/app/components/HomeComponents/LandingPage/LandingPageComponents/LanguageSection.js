@@ -9,7 +9,6 @@ export const LanguageSection = () => {
       </h1>
       <div className="grid grid-cols-4 grid-rows-3 my-4 2xl:w-1/3 lg:w-1/2 gap-8 items-center">
         <img src="/assets/images/logos/python.png"></img>
-        <img src="/assets/images/logos/java.png"></img>
         <img src="/assets/images/logos/dart.png"></img>
         <img src="/assets/images/logos/html.png"></img>
         <img src="/assets/images/logos/css.png"></img>

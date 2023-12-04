@@ -104,9 +104,29 @@
     transform: translateX(15px);
   }
 }
+@keyframes web-project-buttons-animation {
+  0% {
+    border-bottom: solid 2px transparent;
+    border-radius: 0px;
+  }
+  50% {
+    border-bottom: solid 2px rgb(190, 60, 77);
+    border-radius: 8px;
+  }
+  100% {
+    border-bottom: solid 2px transparent;
+    border-radius: 0px;
+  }
+}
 .music-title-animate {
   animation-name: music-animation;
   animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.web-project-buttons-animate {
+  animation-name: web-project-buttons-animation;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }

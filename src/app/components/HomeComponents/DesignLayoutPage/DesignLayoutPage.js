@@ -173,7 +173,7 @@ const igorMagazines = [
 
 export const DesignLayoutPage = () => {
   return (
-    <div className="flex flex-col min-h-screen lg:p-0 p-4" id="layouts-page">
+    <div className="hidden lg:flex flex-col min-h-screen lg:p-0 p-4" id="layouts-page">
       <h1
         className={WorkSansFont.className + " font-bold text-6xl lg:text-8xl"}
       >

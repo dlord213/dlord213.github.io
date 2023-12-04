@@ -29,7 +29,7 @@ export const TopHeader = () => {
           </h1>
           <p className={WorkSansFont.className + " font-light"}>student</p>
         </div>
-        <button className={WorkSansFont.className + " font-normal transition-all delay-0 duration-500 hover:text-[#BE3C4D]"}>
+        <button className={WorkSansFont.className + " hidden font-normal transition-all delay-0 duration-500 hover:text-[#BE3C4D]"}>
           <Link href="/assets/resume.pdf">view resume</Link>
         </button>
       </div>
