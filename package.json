@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
     "@fullpage/react-fullpage": "^0.1.40",
+    "@mui/icons-material": "^5.15.7",
+    "@mui/material": "^5.15.7",
     "@react-spring/web": "^9.7.3",
     "@react-three/drei": "^9.83.9",
     "@react-three/fiber": "^8.14.1",
