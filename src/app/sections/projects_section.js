@@ -1,4 +1,4 @@
-import RenderProjectCard from "../newComponents/project_card";
+import RenderProjectCard from "../components/project_card";
 export default function ProjectSection() {
   return (
     <>
