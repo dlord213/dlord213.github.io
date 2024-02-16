@@ -9,28 +9,28 @@ export default function ProjectSection() {
           devices="Android"
           description="A mobile app that tracks the deals on Nintendo eShop."
           imageSrc="./assets/images/projects/switchdeals/1.png"
-          link="/"
+          link="https://github.com/dlord213/SwitchDeals"
         />
         <RenderProjectCard
           title="BookWormer"
           devices="Android"
           description="A mobile app that searches books using an API and displays the book details."
           imageSrc="./assets/images/projects/bookwormer/1.png"
-          link="/"
+          link="https://github.com/dlord213/BookWormer"
         />
         <RenderProjectCard
           title="TakeADict"
           devices="Android"
           description="A dictionary mobile app, it searches on words and displays details such as definitions and how to pronounce such word. "
           imageSrc="./assets/images/projects/takeadict/1.png"
-          link="/"
+          link="https://github.com/dlord213/TakeADict"
         />
         <RenderProjectCard
           title="TEK-WIKI"
           devices="Android"
           description="A offline wiki app for the TEKKEN series."
           imageSrc="./assets/images/projects/tekken-01.png"
-          link="/"
+          link="https://github.com/dlord213/flutter-tekken-wiki"
           style="bg-[#13160E]"
         />
         <RenderProjectCard
@@ -38,63 +38,63 @@ export default function ProjectSection() {
           devices="Windows"
           description="A simple desktop application that checks if your credit/debit card number is valid by using Luhn Algorithm."
           imageSrc="./assets/images/projects/card_checker.png"
-          link="/"
+          link="https://github.com/dlord213/card-checker-gui"
         />
         <RenderProjectCard
           title="Library Information System"
           devices="Windows"
           description="A desktop application that stores book details."
           imageSrc="./assets/images/projects/lib_system.png"
-          link="/"
+          link="https://github.com/dlord213/finals-lib-system"
         />
         <RenderProjectCard
           title="PassGen"
           devices="Windows"
           description="A desktop application that generates password."
           imageSrc="./assets/images/projects/password_generator.png"
-          link="/"
+          link="https://github.com/dlord213/password-generator"
         />
         <RenderProjectCard
           title="Persona 3 Skill Editor"
           devices="Windows"
           description="A desktop application that creates a .PNACH file to edit your party skills. (PCSX2)"
           imageSrc="./assets/images/projects/persona_3_1.png"
-          link="/"
+          link="https://github.com/dlord213/P3FES-Party-Editor"
         />
         <RenderProjectCard
           title="P4Guide"
           devices="Windows"
           description="A offline desktop guide application for PERSONA 4."
           imageSrc="./assets/images/projects/persona_4_guide.png"
-          link="/"
+          link="https://github.com/dlord213/persona-4-golden-guide"
         />
         <RenderProjectCard
           title="P5Wiki"
           devices="Windows"
           description="A offline desktop wiki application for PERSONA 5."
           imageSrc="./assets/images/projects/persona_5_1.png"
-          link="/"
+          link="https://github.com/dlord213/Persona-5-Guide-GUI"
         />
         <RenderProjectCard
           title="System-Z"
           devices="Windows"
           description="A desktop application that displays your system information such as CPU, GPU, etc."
           imageSrc="./assets/images/projects/system_z_1.png"
-          link="/"
+          link="https://github.com/dlord213/system-z"
         />
         <RenderProjectCard
           title="TheFoxRun"
           devices="Windows"
           description="A simple game made on GoDot that features a fox and contains few levels to finish."
           imageSrc="./assets/images/projects/the_fox_run.png"
-          link="/"
+          link="https://github.com/dlord213/the-fox-run"
         />
         <RenderProjectCard
           title="Windows Key Generator"
           devices="Windows"
           description="A desktop application that generates a key for Windows 95."
           imageSrc="./assets/images/projects/windows_key_generator.png"
-          link="/"
+          link="https://github.com/dlord213/windows-key-generator"
           style="col-span-auto"
         />
       </div>

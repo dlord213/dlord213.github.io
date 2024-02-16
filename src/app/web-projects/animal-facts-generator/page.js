@@ -146,7 +146,7 @@ export default function Page() {
 
   return (
     <>
-      <div className="flex flex-row min-h-screen p-16 bg-slate-950 text-white">
+      <div className="flex flex-row min-h-screen p-16 justify-center items-center bg-slate-950 text-white">
         <div className="flex flex-col basis-[50%] p-8">
           <h1 className="font-bold text-3xl">Animal Facts Generator</h1>
           <form onSubmit={updateData}>
