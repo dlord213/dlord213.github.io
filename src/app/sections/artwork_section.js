@@ -31,7 +31,7 @@ export default function ArtworkSection() {
         {combinedImgs.map((index) => (
           <img
             src={index.src}
-            className="w-full h-full aspect-square"
+            className="w-full h-full"
             alt=""
             key={index.src}
           />
