@@ -4,7 +4,7 @@ export default function WebSmallProjectsSection() {
     <>
       <h1 className="text-2xl font-bold mt-2">Web Small Projects</h1>
       <div className="flex flex-row flex-wrap gap-2 flex-1">
-        <Link href="/web-projects/100-days-of-poetry">
+        <Link href="/web-projects/100-days-of-poetry" className="hidden">
           <button
             className="dark:bg-[#CFF670] dark:text-[#13160E] bg-[#13160E] text-[#EEF1E9] rounded-lg p-2 hover:translate-y-1 transition-all delay-0 duration-500"
             onClick={() => {
