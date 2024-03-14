@@ -34,6 +34,7 @@ export default function ArtworkSection() {
             className="w-full h-full"
             alt=""
             key={index.src}
+            loading="lazy"
           />
         ))}
       </div>

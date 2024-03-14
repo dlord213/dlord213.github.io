@@ -10,6 +10,8 @@ import ProjectSection from "./sections/projects_section";
 import HeadingSection from "./sections/heading_section";
 import ArtworkSection from "./sections/artwork_section";
 import WebSmallProjectsSection from "./sections/web_small_projects_section";
+import AppsSection from "./sections/apps_section";
+import MusicSection from "./sections/music_section";
 
 const font = Work_Sans({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -42,67 +44,11 @@ export default function Home() {
         <main className={font.className + " flex flex-col items-center"}>
           <div className="flex flex-col gap-2 p-8 md:w-[75%]">
             <HeadingSection />
-            <div className="hidden xl:flex flex-row flex-wrap gap-4 items-center pb-2">
-              <img
-                src="/assets/images/logos/ai.png"
-                className="w-[48px] h-[48px] aspect-square"
-              />
-              <img
-                src="/assets/images/logos/photoshop.png"
-                className="w-[48px] h-[48px] aspect-square"
-              />
-              <img
-                src="/assets/images/logos/tailwind.png"
-                className="w-[64px] h-[48px] aspect-square"
-              />
-              <img
-                src="/assets/images/logos/bootstrap.png"
-                className="w-[56px] h-[48px] aspect-square"
-              />
-              <img
-                src="/assets/images/logos/html.png"
-                className="w-[48px] h-[48px] aspect-square"
-              />
-              <img
-                src="/assets/images/logos/css.png"
-                className="w-[48px] h-[48px] aspect-square"
-              />
-              <img
-                src="/assets/images/logos/js.png"
-                className="w-[48px] h-[48px] aspect-square rounded-lg"
-              />
-              <img
-                src="/assets/images/logos/ts.png"
-                className="w-[48px] h-[48px] aspect-square"
-              />
-              <img
-                src="/assets/images/logos/discord.png"
-                className="w-[48px] h-[48px] aspect-square"
-              />
-              <img
-                src="/assets/images/logos/excel.png"
-                className="w-[48px] h-[48px] aspect-square"
-              />
-              <img
-                src="/assets/images/logos/mysql.png"
-                className="w-[64px] h-[48px] aspect-square"
-              />
-              <img
-                src="/assets/images/logos/xampp.png"
-                className="w-[48px] h-[48px] aspect-square"
-              />
-              <img
-                src="/assets/images/logos/python.png"
-                className="w-[48px] h-[48px] aspect-square"
-              />
-              <img
-                src="/assets/images/logos/pyqt.png"
-                className="w-[64px] h-[48px] aspect-square"
-              />
-            </div>
+            <AppsSection />
             <ProjectSection />
             <WebSmallProjectsSection />
             <ArtworkSection />
+            <MusicSection />
           </div>
         </main>
       </ReactLenis>
