@@ -20,3 +20,33 @@ body {
     @apply dark:bg-[#13160E] dark:text-[#f0f2eb] bg-[#eef1e9] text-[#11130c];
   }
 }
+
+.react-photo-album--photo {
+  transition: all 250ms ease-in-out;
+  border-radius: 0.5em;
+}
+.react-photo-album--photo:hover {
+  scale: 200%;
+  z-index: 10;
+  animation: photo-album-animation-hover 4s ease-in-out 0s infinite;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  filter: brightness(1);
+}
+.photo-album-container:hover .react-photo-album--photo:not(:hover) {
+  transition: all 250ms ease-in-out;
+  filter: brightness(0.5);
+}
+
+@keyframes photo-album-animation-hover {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

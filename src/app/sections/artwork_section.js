@@ -31,7 +31,7 @@ export default function ArtworkSection() {
         {combinedImgs.map((index) => (
           <img
             src={index.src}
-            className="w-full h-full"
+            className="w-full h-full rounded-[1em]"
             alt=""
             key={index.src}
             loading="lazy"
@@ -40,8 +40,14 @@ export default function ArtworkSection() {
       </div>
     </>,
     <>
-      <div className="md:block hidden">
-        <PhotoAlbum layout="rows" photos={combinedImgs} />
+      <div className="md:block hidden photo-album-container">
+        <PhotoAlbum
+          layout="rows"
+          photos={combinedImgs}
+          renderPhoto={({
+            imageProps: { src, alt, ...restImageProps },
+          }) => <img className="hover:scale-150 hover:cursor-pointer" src={src} alt={alt} {...restImageProps} />}
+        />
       </div>
     </>,
   ];
