@@ -7,7 +7,7 @@ export default function MusicSection() {
           width="100%"
           height="300"
           scrolling="no"
-          frameborder="no"
+          frameBorder="no"
           allow="autoplay"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1653426820&color=%2300cc11&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
         ></iframe>
@@ -15,7 +15,7 @@ export default function MusicSection() {
           width="100%"
           height="300"
           scrolling="no"
-          frameborder="no"
+          frameBorder="no"
           allow="autoplay"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1440835774&color=%2300cc11&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
         ></iframe>

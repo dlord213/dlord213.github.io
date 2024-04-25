@@ -1,12 +1,20 @@
 import { ArrowUpwardRounded, ViewModuleRounded } from "@mui/icons-material";
 import { combinedImgs } from "../components/listImages";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PhotoAlbum from "react-photo-album";
 
 export default function ArtworkSection() {
   let animationFrameId;
   const [isGrid, setIsGrid] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
+
+  useEffect(() => {
+    if (window.innerWidth > 640) {
+      setCurrentPage(0);
+    } else {
+      setCurrentPage(1);
+    }
+  }, []);
 
   function onMouseOutHandler() {
     const scrollSpeed = 3;
@@ -24,14 +32,14 @@ export default function ArtworkSection() {
   const pages = [
     <>
       <div
-        className="md:flex hidden flex-row gap-4 overflow-hidden h-[480px] artwork-container"
+        className="md:flex flex-row gap-4 overflow-hidden h-[480px] artwork-container hidden"
         onMouseOut={onMouseOutHandler}
         onMouseOver={onMouseOverHandler}
       >
         {combinedImgs.map((index) => (
           <img
             src={index.src}
-            className="w-full h-full rounded-[1em]"
+            className="md:w-full md:h-full rounded-[1em] object-contain"
             alt=""
             key={index.src}
             loading="lazy"
@@ -40,13 +48,18 @@ export default function ArtworkSection() {
       </div>
     </>,
     <>
-      <div className="md:block hidden photo-album-container">
+      <div className="md:block photo-album-container">
         <PhotoAlbum
           layout="rows"
           photos={combinedImgs}
-          renderPhoto={({
-            imageProps: { src, alt, ...restImageProps },
-          }) => <img className="hover:scale-150 hover:cursor-pointer" src={src} alt={alt} {...restImageProps} />}
+          renderPhoto={({ imageProps: { src, alt, ...restImageProps } }) => (
+            <img
+              className="lg:hover:scale-150 lg:hover:cursor-pointer"
+              src={src}
+              alt={alt}
+              {...restImageProps}
+            />
+          )}
         />
       </div>
     </>,
@@ -55,14 +68,14 @@ export default function ArtworkSection() {
   return (
     <>
       <div className="flex flex-row justify-between items-end">
-        <h1 className="text-2xl font-bold mt-4 md:block hidden">Artworks</h1>
+        <h1 className="text-2xl font-bold mt-4 md:block">Artworks</h1>
         <h1 className="font-bold mt-4 md:block hidden hover-text">
           Hover to auto-scroll
         </h1>
       </div>
       {pages[currentPage]}
       <button
-        className="dark:bg-[#CFF670] dark:text-[#13160E] bg-[#13160E] text-[#EEF1E9] rounded-lg p-2 w-[128px] text-center expand-button md:block hidden"
+        className="dark:bg-[#CFF670] dark:text-[#13160E] bg-[#13160E] text-[#EEF1E9] rounded-lg p-2 w-[128px] text-center expand-button lg:block hidden"
         onClick={() => {
           if (isGrid == false) {
             cancelAnimationFrame(animationFrameId);
