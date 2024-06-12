@@ -38,6 +38,14 @@ export default function AppsSection() {
         className="w-[48px] h-[48px] aspect-square"
       />
       <img
+        src="/assets/images/logos/postgresql.png"
+        className="w-[48px] h-[48px] aspect-square"
+      />
+      <img
+        src="/assets/images/logos/supabase.png"
+        className="w-[48px] h-[48px] aspect-square"
+      />
+      <img
         src="/assets/images/logos/python.png"
         className="w-[48px] h-[48px] aspect-square"
       />
