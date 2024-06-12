@@ -12,14 +12,18 @@ export default function RenderProjectCard(props) {
       >
         <img
           src={imageSrc}
-          className="w-full h-full absolute object-cover brightness-50"
+          className="w-full h-full absolute object-cover brightness-[0.3]"
           alt=""
         />
         <div className="flex flex-col relative p-4 text-white">
           <h1 className="font-black md:text-6xl text-2xl ">{title}</h1>
           <div className="flex flex-col gap-2 mt-2">
-            <p className="md:text-xl md:px-2 rounded-lg">{devices}</p>
-            <p className="text-base md:px-2 rounded-lg">{description}</p>
+            <p className="md:text-xl md:px-2 rounded-lg text-slate-300">
+              {devices}
+            </p>
+            <p className="text-base md:px-2 rounded-lg text-slate-300">
+              {description}
+            </p>
           </div>
         </div>
       </div>

@@ -14,10 +14,6 @@ export default function AppsSection() {
         className="w-[64px] h-[48px] aspect-square"
       />
       <img
-        src="/assets/images/logos/bootstrap.png"
-        className="w-[56px] h-[48px] aspect-square"
-      />
-      <img
         src="/assets/images/logos/html.png"
         className="w-[48px] h-[48px] aspect-square"
       />
@@ -36,14 +32,6 @@ export default function AppsSection() {
       <img
         src="/assets/images/logos/discord.png"
         className="w-[48px] h-[48px] aspect-square"
-      />
-      <img
-        src="/assets/images/logos/excel.png"
-        className="w-[48px] h-[48px] aspect-square"
-      />
-      <img
-        src="/assets/images/logos/mysql.png"
-        className="w-[64px] h-[48px] aspect-square"
       />
       <img
         src="/assets/images/logos/xampp.png"

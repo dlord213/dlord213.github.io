@@ -13,7 +13,6 @@ export default function HeadingSection() {
             <p>USTP / BSIT - 2nd Year</p>
           </div>
         </div>
-        
       </div>
     </>
   );

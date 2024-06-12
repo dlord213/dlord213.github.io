@@ -3,7 +3,17 @@ export default function ProjectSection() {
   return (
     <>
       <h1 className="text-2xl font-bold">Projects</h1>
-      <div className="grid xl:grid-cols-2 xl:grid-rows-2 gap-4 ">
+      <div
+        className="grid xl:grid-cols-2 xl:grid-rows-2 gap-4 "
+        id="projects-section"
+      >
+        <RenderProjectCard
+          title="Tablatures"
+          devices="Android"
+          description="Find chords/tabs of your favorite song! An android app made using Expo."
+          imageSrc="./assets/images/projects/tablature.png"
+          link="https://github.com/dlord213/tablatures"
+        />
         <RenderProjectCard
           title="SwitchDeals"
           devices="Android"

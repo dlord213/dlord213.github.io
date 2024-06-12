@@ -67,7 +67,10 @@ export default function ArtworkSection() {
 
   return (
     <>
-      <div className="flex flex-row justify-between items-end">
+      <div
+        className="flex flex-row justify-between items-end"
+        id="artwork-section"
+      >
         <h1 className="text-2xl font-bold mt-4 md:block">Artworks</h1>
         <h1 className="font-bold mt-4 md:block hidden hover-text">
           Hover to auto-scroll

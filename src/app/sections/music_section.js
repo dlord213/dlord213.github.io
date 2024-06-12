@@ -2,7 +2,7 @@ export default function MusicSection() {
   return (
     <>
       <h1 className="text-2xl font-bold">Music & Beats</h1>
-      <div className="flex flex-row flex-wrap gap-4">
+      <div className="flex flex-row flex-wrap gap-4" id="music-section">
         <iframe
           width="100%"
           height="300"

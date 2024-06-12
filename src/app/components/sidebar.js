@@ -1,9 +1,9 @@
 import {
   DashboardRounded,
   HomeRounded,
-  Light,
   LightModeRounded,
   WebAssetRounded,
+  MusicNoteRounded,
 } from "@mui/icons-material";
 import Link from "next/link";
 import { useTheme } from "next-themes";
@@ -55,7 +55,7 @@ export default function Sidebar() {
           </h1>
         </div>
       </Link>
-      <Link href="/">
+      <Link href="#projects-section">
         <div className="flex flex-row gap-2 justify-center items-center">
           <DashboardRounded fontSize="large" />
           <h1 className="font-bold nav-h1 opacity-0 transition-all duration-500 delay-0">
@@ -63,11 +63,19 @@ export default function Sidebar() {
           </h1>
         </div>
       </Link>
-      <Link href="/">
+      <Link href="#artwork-section">
         <div className="flex flex-row gap-2 justify-center items-center">
           <WebAssetRounded fontSize="large" />
           <h1 className="font-bold nav-h1 opacity-0 transition-all duration-500 delay-0">
             Artworks
+          </h1>
+        </div>
+      </Link>
+      <Link href="#music-section">
+        <div className="flex flex-row gap-2 justify-center items-center">
+          <MusicNoteRounded fontSize="large" />
+          <h1 className="font-bold nav-h1 opacity-0 transition-all duration-500 delay-0">
+            Music
           </h1>
         </div>
       </Link>
