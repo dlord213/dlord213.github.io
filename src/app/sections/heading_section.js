@@ -9,8 +9,8 @@ export default function HeadingSection() {
             className="rounded-full w-[64px] aspect-square"
           />
           <div className="">
-            <p className="dark:text-[#D0F66F] ">Jhon Lloyd Viernes</p>
-            <p>USTP / BSIT - 2nd Year</p>
+            <p className="dark:text-slate-300 ">Jhon Lloyd Viernes</p>
+            <p className="dark:text-slate-300">USTP / BSIT - 2nd Year</p>
           </div>
         </div>
       </div>

@@ -18,8 +18,9 @@ export default function ArtworkSection() {
 
   function onMouseOutHandler() {
     const scrollSpeed = 3;
-    if (currentPage == 0) {
-      document.querySelector(".artwork-container").scrollLeft += scrollSpeed;
+    const artworkContainer = document.querySelector(".artwork-container");
+    if (artworkContainer && currentPage === 0) {
+      artworkContainer.scrollLeft += scrollSpeed;
     }
 
     animationFrameId = requestAnimationFrame(onMouseOutHandler);
@@ -70,23 +71,16 @@ export default function ArtworkSection() {
       <div
         className="flex flex-row justify-between items-end"
         id="artwork-section"
-      >
-        <h1 className="text-2xl font-bold mt-4 md:block">Artworks</h1>
-        <h1 className="font-bold mt-4 md:block hidden hover-text">
-          Hover to auto-scroll
-        </h1>
-      </div>
+      ></div>
       {pages[currentPage]}
       <button
-        className="dark:bg-[#CFF670] dark:text-[#13160E] bg-[#13160E] text-[#EEF1E9] rounded-lg p-2 w-[128px] text-center expand-button lg:block hidden"
+        className="dark:bg-[#3a31d8] dark:text-[#eae9fc] bg-[#13160E] text-[#EEF1E9] rounded-lg p-2 w-[128px] text-center expand-button lg:block hidden"
         onClick={() => {
           if (isGrid == false) {
             cancelAnimationFrame(animationFrameId);
-            document.querySelector(".hover-text").style.opacity = 0;
             setCurrentPage(1);
             setIsGrid(true);
           } else {
-            document.querySelector(".hover-text").style.opacity = 1;
             setCurrentPage(0);
             setIsGrid(false);
           }

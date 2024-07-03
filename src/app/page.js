@@ -45,9 +45,9 @@ export default function Home() {
           <div className="flex flex-col gap-2 p-8 md:w-[75%]">
             <HeadingSection />
             <AppsSection />
+            <ArtworkSection />
             <ProjectSection />
             <WebSmallProjectsSection />
-            <ArtworkSection />
             <MusicSection />
           </div>
         </main>

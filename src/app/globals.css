@@ -17,7 +17,7 @@ body {
 
 @layer base {
   body {
-    @apply dark:bg-[#13160E] dark:text-[#f0f2eb] bg-[#eef1e9] text-[#11130c];
+    @apply dark:bg-[#0b0a10] dark:text-[#ebe9fc] bg-[#f0eff5] text-[#050316];
   }
 }
 
