@@ -105,7 +105,13 @@ export default function ProjectSection() {
           description="A desktop application that generates a key for Windows 95."
           imageSrc="./assets/images/projects/windows_key_generator.png"
           link="https://github.com/dlord213/windows-key-generator"
-          style="col-span-auto"
+        />
+        <RenderProjectCard
+          title="Wii Parental Control Password Reset Tool"
+          devices="Browser"
+          description="A tool that generates a unlock code for locked parental controls."
+          imageSrc="./assets/images/projects/wii parental controls unlock tool.png"
+          link="https://github.com/dlord213/windows-key-generator"
         />
       </div>
     </>

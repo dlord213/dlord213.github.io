@@ -2,9 +2,9 @@ import { ArrowUpwardRounded, ViewModuleRounded } from "@mui/icons-material";
 import { combinedImgs } from "../components/listImages";
 import { useEffect, useState } from "react";
 import PhotoAlbum from "react-photo-album";
+import Marquee from "react-fast-marquee";
 
 export default function ArtworkSection() {
-  let animationFrameId;
   const [isGrid, setIsGrid] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
 
@@ -16,37 +16,23 @@ export default function ArtworkSection() {
     }
   }, []);
 
-  function onMouseOutHandler() {
-    const scrollSpeed = 3;
-    const artworkContainer = document.querySelector(".artwork-container");
-    if (artworkContainer && currentPage === 0) {
-      artworkContainer.scrollLeft += scrollSpeed;
-    }
-
-    animationFrameId = requestAnimationFrame(onMouseOutHandler);
-  }
-
-  function onMouseOverHandler() {
-    cancelAnimationFrame(animationFrameId);
-  }
-
   const pages = [
     <>
-      <div
-        className="md:flex flex-row gap-4 overflow-hidden h-[480px] artwork-container hidden"
-        onMouseOut={onMouseOutHandler}
-        onMouseOver={onMouseOverHandler}
+      <Marquee
+        speed={200}
+        pauseOnHover={true}
+        delay={3}
+        style={{ maxHeight: 480 }}
       >
-        {combinedImgs.map((index) => (
+        {combinedImgs.map((img) => (
           <img
-            src={index.src}
-            className="md:w-full md:h-full rounded-[1em] object-contain"
+            src={img.src}
+            className="rounded-[1em] object-contain mx-2 max-w-[480px] max-h-[480px]"
             alt=""
-            key={index.src}
-            loading="lazy"
+            key={img.src}
           />
         ))}
-      </div>
+      </Marquee>
     </>,
     <>
       <div className="md:block photo-album-container">
@@ -76,14 +62,8 @@ export default function ArtworkSection() {
       <button
         className="sticky z-50 bottom-8 dark:bg-indigo-600 dark:text-[#eae9fc] bg-[#13160E] text-[#EEF1E9] rounded-lg p-2 w-[128px] text-center expand-button lg:block hidden self-end"
         onClick={() => {
-          if (isGrid == false) {
-            cancelAnimationFrame(animationFrameId);
-            setCurrentPage(1);
-            setIsGrid(true);
-          } else {
-            setCurrentPage(0);
-            setIsGrid(false);
-          }
+          setCurrentPage(isGrid ? 0 : 1);
+          setIsGrid((prevIsGrid) => !prevIsGrid);
         }}
       >
         {isGrid ? (

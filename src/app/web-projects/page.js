@@ -9,11 +9,6 @@ const projects = [
     link: "/web-projects/channel-orange",
   },
   {
-    title: "100 Days of Poetry",
-    desc: "A gallery album of my creations and poems that I liked.",
-    link: "/web-projects/100-days-of-poetry",
-  },
-  {
     title: "♡ ditto ♡",
     desc: "A cute social media page I made.",
     link: "/web-projects/ditto",
@@ -63,6 +58,11 @@ const projects = [
     desc: "A simple webpage that provides a list of synonyms and antonyms of a word you entered using an API.",
     link: "/web-projects/nymsfinder",
   },
+  {
+    title: "Wii Parental Control Password Reset Tool",
+    desc: "A tool that generates a unlock code for locked parental controls.",
+    link: "/web-projects/nintendo-master-key-generator",
+  },
 ];
 
 export default function Page() {
@@ -72,7 +72,7 @@ export default function Page() {
   return (
     <ReactLenis root>
       <div className="flex flex-col min-h-screen bg-slate-900 items-center">
-        <div className="flex flex-row bg-slate-950 p-4 text-white justify-around items-center m-4 rounded-md w-[500px]">
+        <div className="flex flex-row bg-slate-950 p-4 text-white justify-around items-center m-4 rounded-md max-w-7xl">
           <h1 className="font-bold text-4xl">[ web projects ]</h1>
         </div>
         <div className="flex flex-col text-white items-center justify-center">
