@@ -6,7 +6,7 @@ export default function RenderProjectCard(props) {
     <Link href={link} className="w-full">
       <div
         className={
-          "flex flex-col rounded-lg md:min-h-[15em] overflow-hidden relative shadow-inner hover:translate-y-1 border-b-8 hover:border-b-[#3a31d8] dark:hover:border-b-[#3a31d8] transition-all delay-0 duration-500 cursor-pointer justify-center border-b-[#0b0a10] dark:border-b-[#F1F3EC] " +
+          "flex flex-col rounded-lg md:min-h-[15em] overflow-hidden relative shadow-inner hover:translate-y-1 border-b-8 hover:border-b-indigo-600 dark:hover:border-b-indigo-600 transition-all delay-0 duration-500 cursor-pointer justify-center border-b-[#0b0a10] dark:border-b-[#F1F3EC] " +
           style
         }
       >

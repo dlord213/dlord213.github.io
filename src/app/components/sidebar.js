@@ -43,7 +43,7 @@ export default function Sidebar() {
 
   return (
     <div
-      className="float-left fixed 2xl:left-[9.5rem] xl:left-[5.5rem] left-0 top-0 hidden md:flex flex-col justify-center items-start m-4 bg-[#11130C] text-[#EEF1E9] dark:bg-[#3a31d8] dark:text-[#eae9fc] p-4 rounded-lg gap-2 nav-sidebar max-w-[64px] transition-all duration-500 delay-0 xl:hover:-translate-x-16 z-10"
+      className="float-left fixed 2xl:left-[9.5rem] xl:left-[5.5rem] left-0 top-0 hidden md:flex flex-col justify-center items-start m-4 bg-[#11130C] text-[#EEF1E9] dark:bg-indigo-600 dark:text-[#eae9fc] p-4 rounded-lg gap-2 nav-sidebar max-w-[64px] transition-all duration-500 delay-0 xl:hover:-translate-x-16 z-10"
       onMouseOver={onMouseOverHandler}
       onMouseLeave={onMouseLeaveHandler}
     >

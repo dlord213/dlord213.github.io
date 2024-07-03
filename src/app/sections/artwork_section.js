@@ -69,12 +69,12 @@ export default function ArtworkSection() {
   return (
     <>
       <div
-        className="flex flex-row justify-between items-end"
+        className="flex flex-row justify-between items-end relative"
         id="artwork-section"
       ></div>
       {pages[currentPage]}
       <button
-        className="dark:bg-[#3a31d8] dark:text-[#eae9fc] bg-[#13160E] text-[#EEF1E9] rounded-lg p-2 w-[128px] text-center expand-button lg:block hidden"
+        className="sticky z-50 bottom-8 dark:bg-indigo-600 dark:text-[#eae9fc] bg-[#13160E] text-[#EEF1E9] rounded-lg p-2 w-[128px] text-center expand-button lg:block hidden self-end"
         onClick={() => {
           if (isGrid == false) {
             cancelAnimationFrame(animationFrameId);
