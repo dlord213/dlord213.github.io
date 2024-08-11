@@ -47,7 +47,7 @@ export default function Sidebar() {
       onMouseOver={onMouseOverHandler}
       onMouseLeave={onMouseLeaveHandler}
     >
-      <Link href="/">
+      <Link href="/" className="hidden">
         <div className="flex flex-row gap-2 justify-center items-center">
           <HomeRounded fontSize="large" />
           <h1 className="font-bold nav-h1 opacity-0 transition-all duration-500 delay-0">
@@ -55,7 +55,7 @@ export default function Sidebar() {
           </h1>
         </div>
       </Link>
-      <Link href="#projects-section">
+      <Link href="#projects-section" className="hidden">
         <div className="flex flex-row gap-2 justify-center items-center">
           <DashboardRounded fontSize="large" />
           <h1 className="font-bold nav-h1 opacity-0 transition-all duration-500 delay-0">
@@ -63,7 +63,7 @@ export default function Sidebar() {
           </h1>
         </div>
       </Link>
-      <Link href="#artwork-section">
+      <Link href="#artwork-section" className="hidden">
         <div className="flex flex-row gap-2 justify-center items-center">
           <WebAssetRounded fontSize="large" />
           <h1 className="font-bold nav-h1 opacity-0 transition-all duration-500 delay-0">
@@ -71,7 +71,7 @@ export default function Sidebar() {
           </h1>
         </div>
       </Link>
-      <Link href="#music-section">
+      <Link href="#music-section" className="hidden">
         <div className="flex flex-row gap-2 justify-center items-center">
           <MusicNoteRounded fontSize="large" />
           <h1 className="font-bold nav-h1 opacity-0 transition-all duration-500 delay-0">

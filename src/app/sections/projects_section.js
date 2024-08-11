@@ -109,9 +109,16 @@ export default function ProjectSection() {
         <RenderProjectCard
           title="Wii Parental Control Password Reset Tool"
           devices="Browser"
-          description="A tool that generates a unlock code for locked parental controls."
+          description="A tool that generates a Wii unlock code for Wii that has locked parental controls."
           imageSrc="./assets/images/projects/wii parental controls unlock tool.png"
-          link="https://github.com/dlord213/windows-key-generator"
+          link="/web-projects/wii-master-key-generator"
+        />
+        <RenderProjectCard
+          title="3DS Parental Control Password Reset Tool"
+          devices="Browser"
+          description="A tool that generates a unlock code for 3DS that has locked parental controls."
+          imageSrc="./assets/images/projects/wii parental controls unlock tool.png"
+          link="/web-projects/3ds-master-key-generator"
         />
       </div>
     </>
