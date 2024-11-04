@@ -11,6 +11,8 @@ import {
   FaInstagram,
   FaSoundcloud,
 } from "react-icons/fa";
+import { IoLocation } from "react-icons/io5";
+import { MdMail } from "react-icons/md";
 
 import { images } from "./constants/art_images";
 import Card from "./components/card";
@@ -34,28 +36,44 @@ export default function Home() {
 
   return (
     <>
-      <animated.div className="flex flex-row xl:mx-[15vw] mt-16 mb-4 lg:mx-[10vw] font-[family-name:var(--font-geist-sans)] gap-36 ">
+      <animated.div className="flex flex-col  md:flex md:flex-row 2xl:mx-[15vw] xl:mx-[10vw] mt-16 mb-4 lg:mx-[5vw] md:mx-[5vw] mx-[5vw] font-[family-name:var(--font-geist-sans)] lg:gap-36 gap-8 ">
         <animated.section
           className="sticky basis-[30%]"
           style={leftOpacityAnimation}
         >
-          <animated.div className="sticky min-h-[95vh] flex flex-col justify-between top-8 left-4">
-            <animated.div className="flex flex-col gap-8">
+          <animated.div className="sticky 2xl:min-h-[95vh] xl:min-h-[94vh] lg:min-h-[94vh] flex flex-col justify-between top-8 left-4">
+            <animated.div className="flex flex-col 2xl:gap-8 gap-4">
               <img
                 src="assets/profile.jpeg "
                 className="aspect-square object-cover rounded-full  transition-all delay-0 duration-200 hover:scale-110 hover:shadow-[0px_0px_25px_2px_rgba(149,_157,_165,_0.2)]"
               />
               <animated.div className="sticky flex flex-col gap-4">
-                <h1 className="font-bold xl:text-4xl lg:text-2xl">
-                  Jhon Lloyd Viernes
-                </h1>
+                <animated.div>
+                  <h1 className="font-bold xl:text-4xl lg:text-2xl mb-1">
+                    Jhon Lloyd Viernes
+                  </h1>
+                  <div className="flex flex-row gap-3 items-center">
+                    <IoLocation size={20} />
+                    <p className="text-gray-400">Cagayan de Oro, Philippines</p>
+                  </div>
+                  <div className="flex flex-row gap-3 items-center">
+                    <MdMail size={20} />
+                    <a
+                      href="mailto:viernes.jhonlloydd@gmail.com"
+                      className="text-gray-400 delay-0 duration-300 hover:text-rose-500 transition-all underline"
+                    >
+                      viernes.jhonlloydd@gmail.com
+                    </a>
+                  </div>
+                </animated.div>
+
                 <p>
                   I&apos;m a graphic designer & developer primarily focused on
                   React/Next.JS. Interested on developing high-quality yet
                   maintainable applications.
                 </p>
               </animated.div>
-              <animated.div className="flex flex-col gap-2">
+              <animated.div className="hidden md:flex flex-col gap-2 ">
                 <a
                   href="#"
                   className="text-rose-500 transition-all delay-0 duration-300 hover:text-rose-400 hover:font-bold"
@@ -89,7 +107,7 @@ export default function Home() {
               </animated.div>
             </animated.div>
             <animated.div className="flex flex-col gap-3">
-              <animated.div className="flex flex-row gap-4">
+              <animated.div className="hidden lg:flex xl:hidden 2xl:flex flex-row gap-4">
                 <a href="https://web.facebook.com/mirimomekiku">
                   <FaFacebookSquare
                     size={32}
@@ -115,7 +133,7 @@ export default function Home() {
                   />
                 </a>
               </animated.div>
-              <p className="text-sm">
+              <p className="text-sm 2xl:flex hidden">
                 Designed in Figma and coded in Visual Studio Code by yours
                 truly. Built with Next.js and Tailwind CSS.
               </p>
@@ -126,7 +144,7 @@ export default function Home() {
           className="flex flex-col gap-8 basis-[70%]"
           style={rightOpacityAnimation}
         >
-          <p className="text-lg">
+          <p className="md:block hidden text-lg">
             Back then in my childhood, I was always interested on computers and
             how things worked behind the scenes. I was simply fascinated how a
             mere screen can display many informations and how you can connect to
@@ -155,7 +173,7 @@ export default function Home() {
               <h3 className="text-base text-neutral-300 dark:opacity-50">
                 Backend
               </h3>
-              <ul className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-x-2 gap-y-2">
+              <ul className="grid grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-2">
                 <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-white/50 dark:bg-[#ffffff14]">
                     <svg
@@ -307,7 +325,7 @@ export default function Home() {
               <h3 className="text-base text-neutral-300 dark:opacity-50">
                 Frontend
               </h3>
-              <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-2">
+              <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4 gap-x-2 gap-y-2">
                 <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[#7ee1fc26]">
                     <svg
@@ -461,7 +479,7 @@ export default function Home() {
               <h3 className="text-base text-neutral-300 dark:opacity-50">
                 Applications
               </h3>
-              <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-2">
+              <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-2 gap-y-2">
                 <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
                     <img src="/assets/logos/android_studio.png" />
@@ -522,13 +540,19 @@ export default function Home() {
                     Qt Designer
                   </span>
                 </li>
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                  <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
+                    <img src="./assets/logos/fl studio.webp" />
+                  </animated.div>
+                  <span className="text-smaller md:text-small">FL Studio</span>
+                </li>
               </ul>
             </animated.div>
             <animated.div className="flex flex-col gap-2">
               <h3 className="text-base text-neutral-300 dark:opacity-50">
                 Other Libraries/Frameworks
               </h3>
-              <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-2">
+              <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-2 gap-y-2">
                 <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
                   <span className="text-smaller md:text-small">Zustand</span>
                 </li>
@@ -575,7 +599,10 @@ export default function Home() {
               </ul>
             </animated.div>
           </animated.section>
-          <animated.section className="flex flex-col gap-6" id="projects">
+          <animated.section
+            className="hidden lg:flex flex-col gap-6"
+            id="projects"
+          >
             <h1 className="xl:text-4xl lg:text-2xl font-bold">Projects</h1>
             <animated.div className="flex flex-col gap-4">
               {projects.map((item) => (
@@ -590,7 +617,7 @@ export default function Home() {
               ))}
             </animated.div>
           </animated.section>
-          <animated.section className="flex flex-col gap-6" id="art">
+          <animated.section className="hidden lg:flex flex-col gap-6" id="art">
             <animated.div className="flex flex-row justify-between items-center">
               <h1 className="xl:text-4xl lg:text-2xl font-bold">Art</h1>
               {isGridView ? (
@@ -614,6 +641,7 @@ export default function Home() {
                     <img
                       src={item.src}
                       className="w-full rounded-md transition-all delay-0 duration-300 react-photo-album--photo"
+                      loading="lazy"
                     />
                   </animated.div>
                 ))}
@@ -627,6 +655,28 @@ export default function Home() {
                 ))}
               </Marquee>
             )}
+          </animated.section>
+          <animated.section
+            className="hidden lg:flex flex-col gap-6"
+            id="music"
+          >
+            <h1 className="xl:text-4xl lg:text-2xl font-bold">Music</h1>
+            <iframe
+              width="100%"
+              height="450"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1852158159&color=%23f0dceb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            ></iframe>
+            <iframe
+              width="100%"
+              height="450"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1653426820&color=%23f0dceb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            ></iframe>
           </animated.section>
         </animated.div>
       </animated.div>
