@@ -620,7 +620,7 @@ export default function Home() {
               </animated.div>
             ) : (
               <Marquee pauseOnClick pauseOnHover className="max-w-[70%]">
-                {images.map((item: any) => (
+                {images.map((item) => (
                   <animated.div className="max-w-[240px] mx-2" key={item.src}>
                     <img src={item.src} className="w-full rounded-md" />
                   </animated.div>
