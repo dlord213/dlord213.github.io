@@ -1,7 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import React, { useState } from "react";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const calculateMasterKey = (generator: any[]) => {
   const table = new Array(0x100).fill(0);
   let data, y, x, yll, yhi;

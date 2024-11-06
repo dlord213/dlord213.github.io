@@ -1,9 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
 
 class CRC32 {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   table: any;
 
   constructor() {
