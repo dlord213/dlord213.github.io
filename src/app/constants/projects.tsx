@@ -36,7 +36,7 @@ export const projects: ProjectInterface[] = [
     description:
       "A tool that generates a Wii unlock code for Wii that has locked parental controls.",
     imageSrc: "./assets/projects/wii parental controls unlock tool.png",
-    link: "/web-projects/wii-master-key-generator",
+    link: "/web/wii-master-key-generator",
   },
   {
     title: "3DS Parental Control Password Reset Tool",
@@ -44,7 +44,7 @@ export const projects: ProjectInterface[] = [
     description:
       "A tool that generates a unlock code for 3DS that has locked parental controls.",
     imageSrc: "./assets/projects/wii parental controls unlock tool.png",
-    link: "/web-projects/3ds-master-key-generator",
+    link: "/web/3ds-master-key-generator",
   },
   {
     title: "Windows Key Generator",
