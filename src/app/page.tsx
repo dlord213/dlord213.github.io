@@ -36,7 +36,8 @@ export default function Home() {
 
   return (
     <>
-      <animated.div className="flex flex-col  md:flex md:flex-row 2xl:mx-[15vw] xl:mx-[10vw] mt-16 mb-4 lg:mx-[5vw] md:mx-[5vw] mx-[5vw] font-[family-name:var(--font-geist-sans)] lg:gap-36 gap-8 ">
+      <div className="home-bg fixed top-0 w-full h-full -z-50"></div>
+      <animated.div className="flex flex-col md:flex md:flex-row 2xl:mx-[15vw] xl:mx-[10vw] mt-16 mb-4 lg:mx-[5vw] md:mx-[5vw] mx-[5vw] font-[family-name:var(--font-geist-sans)] lg:gap-36 gap-8">
         <animated.section
           className="sticky basis-[30%]"
           style={leftOpacityAnimation}
@@ -174,7 +175,7 @@ export default function Home() {
                 Backend
               </h3>
               <ul className="grid grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-2">
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-white/50 dark:bg-[#ffffff14]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +194,7 @@ export default function Home() {
                   </animated.div>
                   <span className="text-smaller md:text-small">NextJS</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[#6fa66026]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +208,7 @@ export default function Home() {
                   </animated.div>
                   <span className="text-smaller md:text-small">Node</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[#8b5cf626]">
                     <svg
                       viewBox="0 0 24 24"
@@ -231,7 +232,7 @@ export default function Home() {
                   </animated.div>
                   <span className="text-smaller md:text-small">PHP</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[#6e97fe26]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -301,19 +302,19 @@ export default function Home() {
                   </animated.div>
                   <span className="text-smaller md:text-small">Vite</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
                     <img src="https://cdn.icon-icons.com/icons2/3914/PNG/512/pocketbase_logo_icon_248816.png" />
                   </animated.div>
                   <span className="text-smaller md:text-small">PocketBase</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
                     <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" />
                   </animated.div>
                   <span className="text-smaller md:text-small">MySQL</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
                     <img src="/assets/logos/supabase.png" />
                   </animated.div>
@@ -326,7 +327,7 @@ export default function Home() {
                 Frontend
               </h3>
               <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4 gap-x-2 gap-y-2">
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[#7ee1fc26]">
                     <svg
                       viewBox="0 0 25 25"
@@ -342,7 +343,7 @@ export default function Home() {
                   </animated.div>
                   <span className="text-smaller md:text-small">React</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[#007acc26]">
                     <svg
                       viewBox="0 0 24 24"
@@ -359,7 +360,7 @@ export default function Home() {
                   </animated.div>
                   <span className="text-smaller md:text-small">Typescript</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[#f0db4f26]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -390,7 +391,7 @@ export default function Home() {
                   </animated.div>
                   <span className="text-smaller md:text-small">Javascript</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[#44a8b326]">
                     <svg
                       viewBox="0 0 24 24"
@@ -424,7 +425,7 @@ export default function Home() {
                     Tailwind CSS
                   </span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[#cf649a26]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -437,7 +438,7 @@ export default function Home() {
                   </animated.div>
                   <span className="text-smaller md:text-small">SASS</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[#dd4b2526]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -450,7 +451,7 @@ export default function Home() {
                   </animated.div>
                   <span className="text-smaller md:text-small">HTML</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[#264de426]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -480,7 +481,7 @@ export default function Home() {
                 Applications
               </h3>
               <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-2 gap-y-2">
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
                     <img src="/assets/logos/android_studio.png" />
                   </animated.div>
@@ -488,25 +489,25 @@ export default function Home() {
                     Android Studio
                   </span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
                     <img src="/assets/logos/blender.png" />
                   </animated.div>
                   <span className="text-smaller md:text-small">Blender</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
                     <img src="/assets/logos/excel.png" />
                   </animated.div>
                   <span className="text-smaller md:text-small">Excel</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
                     <img src="/assets/logos/github.png" />
                   </animated.div>
                   <span className="text-smaller md:text-small">Git/GitHub</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
                     <img src="/assets/logos/photoshop.png" />
                   </animated.div>
@@ -514,25 +515,25 @@ export default function Home() {
                     Adobe Photoshop
                   </span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
                     <img src="/assets/logos/vscode.png" />
                   </animated.div>
                   <span className="text-smaller md:text-small">VSCode</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" />
                   </animated.div>
                   <span className="text-smaller md:text-small">Canva</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px] ">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png" />
                   </animated.div>
                   <span className="text-smaller md:text-small">Figma</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
                     <img src="https://www.svgrepo.com/show/306627/qt.svg" />
                   </animated.div>
@@ -540,7 +541,7 @@ export default function Home() {
                     Qt Designer
                   </span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
                     <img src="./assets/logos/fl studio.webp" />
                   </animated.div>
@@ -553,47 +554,47 @@ export default function Home() {
                 Other Libraries/Frameworks
               </h3>
               <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-2 gap-y-2">
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <span className="text-smaller md:text-small">Zustand</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <span className="text-smaller md:text-small">
                     Tanstack Query
                   </span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <span className="text-smaller md:text-small">Expo</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <span className="text-smaller md:text-small">ShadCN UI</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <span className="text-smaller md:text-small">
                     React Native Paper
                   </span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <span className="text-smaller md:text-small">Sonner</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <span className="text-smaller md:text-small">
                     React Router
                   </span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <span className="text-smaller md:text-small">
                     Styled Components
                   </span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <span className="text-smaller md:text-small">
                     Material UI
                   </span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <span className="text-smaller md:text-small">Formik</span>
                 </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 dark:bg-[#ffffff0a] dark:backdrop-blur-2xl">
+                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
                   <span className="text-smaller md:text-small">Axios</span>
                 </li>
               </ul>
