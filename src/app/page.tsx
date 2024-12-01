@@ -476,80 +476,7 @@ export default function Home() {
                 </li>
               </ul>
             </animated.div>
-            <animated.div className="flex flex-col gap-2">
-              <h3 className="text-base text-neutral-300 dark:opacity-50">
-                Applications
-              </h3>
-              <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-2 gap-y-2">
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
-                  <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
-                    <img src="/assets/logos/android_studio.png" />
-                  </animated.div>
-                  <span className="text-smaller md:text-small">
-                    Android Studio
-                  </span>
-                </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
-                  <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
-                    <img src="/assets/logos/blender.png" />
-                  </animated.div>
-                  <span className="text-smaller md:text-small">Blender</span>
-                </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
-                  <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
-                    <img src="/assets/logos/excel.png" />
-                  </animated.div>
-                  <span className="text-smaller md:text-small">Excel</span>
-                </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
-                  <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
-                    <img src="/assets/logos/github.png" />
-                  </animated.div>
-                  <span className="text-smaller md:text-small">Git/GitHub</span>
-                </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
-                  <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
-                    <img src="/assets/logos/photoshop.png" />
-                  </animated.div>
-                  <span className="text-smaller md:text-small">
-                    Adobe Photoshop
-                  </span>
-                </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
-                  <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
-                    <img src="/assets/logos/vscode.png" />
-                  </animated.div>
-                  <span className="text-smaller md:text-small">VSCode</span>
-                </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
-                  <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" />
-                  </animated.div>
-                  <span className="text-smaller md:text-small">Canva</span>
-                </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
-                  <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px] ">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png" />
-                  </animated.div>
-                  <span className="text-smaller md:text-small">Figma</span>
-                </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
-                  <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
-                    <img src="https://www.svgrepo.com/show/306627/qt.svg" />
-                  </animated.div>
-                  <span className="text-smaller md:text-small">
-                    Qt Designer
-                  </span>
-                </li>
-                <li className="flex items-center gap-3 rounded-md p-3 bg-secondary/5 bg-[#ffffff0a] backdrop-blur-2xl">
-                  <animated.div className="p-2 items-center justify-center rounded-lg bg-[white] max-w-[36px]">
-                    <img src="./assets/logos/fl studio.webp" />
-                  </animated.div>
-                  <span className="text-smaller md:text-small">FL Studio</span>
-                </li>
-              </ul>
-            </animated.div>
-            <animated.div className="flex flex-col gap-2">
+            <animated.div className="hidden lg:flex flex-col gap-2">
               <h3 className="text-base text-neutral-300 dark:opacity-50">
                 Other Libraries/Frameworks
               </h3>
@@ -601,10 +528,12 @@ export default function Home() {
             </animated.div>
           </animated.section>
           <animated.section
-            className="hidden lg:flex flex-col gap-6"
+            className="lg:flex flex-col lg:gap-6 gap-8"
             id="projects"
           >
-            <h1 className="xl:text-4xl lg:text-2xl font-bold">Projects</h1>
+            <h1 className="xl:text-4xl lg:text-2xl text-xl font-bold">
+              Projects
+            </h1>
             <animated.div className="flex flex-col gap-4">
               {projects.map((item) => (
                 <Card
