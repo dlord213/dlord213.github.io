@@ -8,6 +8,21 @@ interface ProjectInterface {
 
 export const projects: ProjectInterface[] = [
   {
+    title: "SwitchDeals",
+    devices: "Web",
+    description: "A web app that tracks deals on Nintendo eShop.",
+    imageSrc: "./assets/projects/switchdeals/1.jpg",
+    link: "https://switchdeals.vercel.app",
+  },
+  {
+    title: "TeleSpecs",
+    devices: "Web",
+    description:
+      "A web application that tracks mobile device specifications and where users can also post reviews.",
+    imageSrc: "./assets/projects/telespecs/1.png",
+    link: "https://telespecs.vercel.app",
+  },
+  {
     title: "ètudier",
     devices: "Android",
     description:
@@ -23,13 +38,7 @@ export const projects: ProjectInterface[] = [
     imageSrc: "./assets/projects/tablature.png",
     link: "https://github.com/dlord213/tablatures",
   },
-  {
-    title: "SwitchDeals",
-    devices: "Android",
-    description: "A mobile app that tracks deals on Nintendo eShop.",
-    imageSrc: "./assets/projects/switchdeals/1.png",
-    link: "https://github.com/dlord213/SwitchDeals",
-  },
+
   {
     title: "Wii Parental Control Password Reset Tool",
     devices: "Web",
