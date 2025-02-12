@@ -57,3 +57,19 @@ body {
     transform: translateY(0px);
   }
 }
+
+.trailsText {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  line-height: 80px;
+  font-size: 6em;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  will-change: transform, opacity;
+}
+
+.trailsText > div {
+  padding-right: 0.05em;
+  overflow: hidden;
+}
