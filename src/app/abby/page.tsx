@@ -1,15 +1,12 @@
 "use client";
-import {
-  a,
-  animated,
-  useSpring,
-  useSpringValue,
-  useTrail,
-} from "@react-spring/web";
-import React, { useEffect } from "react";
+import { a, animated, useSpringValue, useTrail } from "@react-spring/web";
+import React, { ReactNode, useEffect } from "react";
 import { useState } from "react";
 
-const Trail: React.FC<{ open: boolean }> = ({ open, children }) => {
+const Trail: React.FC<{ open: boolean; children: ReactNode }> = ({
+  open,
+  children,
+}) => {
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
     config: { mass: 5, tension: 2000, friction: 200 },
