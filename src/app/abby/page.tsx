@@ -63,7 +63,7 @@ export default function Page() {
     </>,
     <>
       <animated.main
-        className="min-h-screen xl:max-w-4xl lg:max-w-6xl mx-auto py-4 gap-4 flex flex-col overflow-hidden"
+        className="min-h-screen xl:max-w-4xl lg:max-w-6xl mx-auto p-4 lg:py-4 lg:gap-4 gap-2 flex flex-col overflow-hidden"
         style={{ opacity: photoMasonryOpacityValue }}
       >
         <h1 className="font-black text-4xl">❤️ Hello, Abby!</h1>
@@ -74,8 +74,8 @@ export default function Page() {
           satoang pag-sabay sa mga nilabay nga adlaw and unta pud mag-sabay pata
           sa mga mulabay nga adlaw. Bawi rako next time bb, love u po. 😁
         </p>
-        <animated.div className="grid grid-cols-2 gap-4">
-          <div className="flex flex-col gap-4">
+        <animated.div className="grid grid-cols-2 lg:gap-4 gap-2">
+          <div className="flex flex-col lg:gap-4 gap-2">
             <img
               src="https://lh3.googleusercontent.com/pw/AP1GczOKgRKrJ5Ki642QlWVg5lgyjL_S-QFDj0-hjz-3MkqeFfo5cFc0e_eMF0ec3Bk6qNRhPZGfncD-xKMhoa3tr8b4gU31nrXF65CyF17CzgQ-Sy68D_0J=w2400"
               className="rounded-md w-full"
@@ -94,7 +94,7 @@ export default function Page() {
           src="https://lh3.googleusercontent.com/pw/AP1GczOghQ5c1i7Gq9tXmObWzMxBcMdd3jTK7EZLRsW9p4EK-OrRuMYqPWDqCab-1vyWfhrnAMQkj40rSYAmgbQvdmuVaT3JLLXnDPxNt_WtZcWd70PPtD7G=w2400"
           className="rounded-md w-full"
         />
-        <animated.div className="grid grid-cols-2 gap-4">
+        <animated.div className="grid grid-cols-2 lg:gap-4 gap-2">
           <img
             src="https://lh3.googleusercontent.com/pw/AP1GczMpcrdiiStFr2YFsUfBVyR2TfHIBdXebyCDn2dyvRvrgXtvFmqFoioI69kOBOmzYiLFas0tUxQG2msPLj5pDLCqThlLvTeiYVJG-jP7njyh-V9SrHum=w2400"
             className="rounded-md w-full"
@@ -104,12 +104,12 @@ export default function Page() {
             className="rounded-md w-full"
           />
         </animated.div>
-        <animated.div className="grid grid-cols-2 gap-4">
+        <animated.div className="grid grid-cols-2 lg:gap-4 gap-2">
           <img
             src="https://lh3.googleusercontent.com/pw/AP1GczPxTHt5E_ddp7V8NapOiQU458Np0H2UEf8vvkcyhrY-UXvNenggzITA5nQIg5LgG_WWbjHOBNo4Uo3OREAG4IS2BrNp_TXN97n7jEP7IOpPrP6Ke80i=w2400"
             className="rounded-md w-full"
           />
-          <div className="grid grid-rows-3 place-items-stretch gap-4">
+          <div className="grid grid-rows-3 place-items-stretch lg:gap-4 gap-2">
             <img
               src="https://lh3.googleusercontent.com/pw/AP1GczOfZmpHoIM7ObAT1dfzzDSTlWxoZKbPP-7j5A3ffJbxhj4xTvnxVNtnuUT8zNv5PWZyQNbwXjm9Q5HH1KY_rslPWzMx7Xw70Qd0DL1V6GtkqxRcQvBq=w2400"
               className="rounded-md w-full"
@@ -124,8 +124,8 @@ export default function Page() {
             />
           </div>
         </animated.div>
-        <animated.div className="grid grid-cols-2 gap-4">
-          <div className="grid grid-rows-1 gap-4">
+        <animated.div className="grid grid-cols-2 lg:gap-4 gap-2">
+          <div className="grid grid-rows-1 lg:gap-4 gap-2">
             <img
               src="https://lh3.googleusercontent.com/pw/AP1GczO6fuyBrkqOLDDF5l4SfPOL-xzKD-MEW4U9QIKTFM8rHz0qLkllDOxMh9Bonp9ZTPTqsdPbY3dW3sEopVWGg6GyBKiOA_MuPUuQ6moggcvS1gE_fs_U=w2400"
               className="rounded-md w-full aspect-square object-cover"
@@ -135,7 +135,7 @@ export default function Page() {
               className="rounded-md w-full"
             />
           </div>
-          <div className="grid grid-rows-1 gap-4">
+          <div className="grid grid-rows-1 lg:gap-4 gap-2">
             <img
               src="https://lh3.googleusercontent.com/pw/AP1GczMcDAWvvPrU8dqb9i-9wijI3wa4utu41XHDKIE3LYg16y_SNDXKEkGAHYjr2c3Md8aOgklGYOnzFXwWTX9lrklN3CAykuPyC2D1iI9-wFQQdxkwbCx0=w2400"
               className="rounded-md w-full"
@@ -150,7 +150,7 @@ export default function Page() {
           src="https://lh3.googleusercontent.com/pw/AP1GczOgKtQyKb_AB5e8DSB5ekYFIHBUdS8HxIudrlZW0umLKSy7ApCh1bVS2HxxaWklGm4fKKW6IRPJFQKPrjMhLjHHt8lA21ZkO8bivwqseeZvFCL7kcOt=w2400"
           className="rounded-md w-full"
         />
-        <animated.div className="grid grid-cols-2 gap-4">
+        <animated.div className="grid grid-cols-2 lg:gap-4 gap-2">
           <img
             src="https://lh3.googleusercontent.com/pw/AP1GczMvbHOm74hrXwnDVWqg8NG99vFKJ48_TVlEJncH5gdoiWb8WdBhwl6PHzjxPbUKZJL6a8qM-XZkIo3ffvt9He-A3hNX1aCV4R1pW1smvIM2y-EpfOqN=w2400"
             className="rounded-md w-full"
@@ -160,7 +160,7 @@ export default function Page() {
             className="rounded-md w-full"
           />
         </animated.div>
-        <animated.div className="grid grid-cols-2 gap-4">
+        <animated.div className="grid grid-cols-2 lg:gap-4 gap-2">
           <img
             src="https://lh3.googleusercontent.com/pw/AP1GczPN9Di2zEnCG6y5orwA8p5gQYz34xocjFHTzBMuY8fRy7ieuSRjUfusPl50xQxuJVk6VEee54Zl0wwtrhtM-T7Tl5_D4bOSlvRf2UPjrlnNUL6chucK=w2400"
             className="rounded-md w-full"
@@ -174,7 +174,7 @@ export default function Page() {
           src="https://lh3.googleusercontent.com/pw/AP1GczOS0TVywJZk0Ha-vPxJ5M3mbBblvLX0aGvB5p1HUpJwZLhsO_R6q2Z7puWldi3Po7rBsbjUgUE3nXStpK1lt7rCMgkX7hniBz0TWZX3ZHSPHZrAkiJF=w2400"
           className="rounded-md w-full"
         />
-        <animated.div className="grid grid-cols-2 gap-4">
+        <animated.div className="grid grid-cols-2 lg:gap-4 gap-2">
           <img
             src="https://lh3.googleusercontent.com/pw/AP1GczNyYcPoOjmRDVUhLuWBL4S5gLrY20v9MqesGd_ULptevoCgWW617fVXliT3CCgTPr7qnl2t-cWSU9aktGqBbRw0fyOg-pW1PJBl_tWnuEDI1HXK6ohc=w2400"
             className="rounded-md w-full"
@@ -184,7 +184,7 @@ export default function Page() {
             className="rounded-md w-full"
           />
         </animated.div>
-        <animated.div className="grid grid-cols-2 gap-4">
+        <animated.div className="grid grid-cols-2 lg:gap-4 gap-2">
           <img
             src="https://lh3.googleusercontent.com/pw/AP1GczO7x7aZqplRX_UiC93Qwh8JDHrchVa-wyAFY0iRlKxHDpGdwZVCyNEroVQtED51DN1x6ccV9Ugf-6i3G-Cj4_zVsfo_CWduJxJchK9qHuh2ROBv-ayY=w2400"
             className="rounded-md w-full"
